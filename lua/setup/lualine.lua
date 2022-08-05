@@ -1,0 +1,18 @@
+local module = {}
+
+local lualine = require 'lualine'
+
+function module.setup()
+    lualine.setup({
+        sections = {
+            lualine_a = {'mode'},
+            lualine_b = {'branch', 'diff', 'diagnostics'},
+            lualine_c = {'filename'},
+            lualine_x = {'encoding', 'fileformat', 'filetype'},
+            lualine_y = {'progress'},
+            lualine_z = {'location'}
+        }
+    })
+end
+
+return module

@@ -10,6 +10,8 @@ packer.startup(function(use)
     use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
 
+    use 'mfussenegger/nvim-dap'
+
     use { 'hrsh7th/nvim-cmp', requires = {
             'hrsh7th/cmp-nvim-lsp',
             'hrsh7th/cmp-buffer',
@@ -21,6 +23,8 @@ packer.startup(function(use)
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
 
+    use 'nvim-lualine/lualine.nvim'
+    use 'kyazdani42/nvim-web-devicons'
     use 'folke/tokyonight.nvim'
 
     use 'github/copilot.vim'

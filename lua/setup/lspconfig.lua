@@ -8,6 +8,8 @@ function module.setup()
     lspconfig.omnisharp.setup{}
     -- bicep *********************************************************************************************
     lspconfig.bicep.setup{}
+    -- lua ***********************************************************************************************
+    lspconfig['lua-lsp-server'].setup{}
 end
 
 return module
