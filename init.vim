@@ -94,18 +94,17 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 nnoremap <leader>af :ALEFix<cr>
 " *******************************************************************
+" f
+" Telescope mappings
+" Source telescope.nvim github.com/nvim-telescope/telescope.nvim
+nnoremap <leader>ff :Telescope find_files<cr>
+nnoremap <leader>fl :Telescope live_grep<cr>
+" *******************************************************************
 " g
 " GitGutter mappings
 " Source vim-gitgutter https://github.com/airblade/vim-gitgutter
 nnoremap <leader>gg :GitGutterToggle<cr>
 nnoremap <leader>ge :GitGutterLineHighlightsToggle<cr>
-
-" *******************************************************************
-" t
-" Telescope mappings
-" Source telescope.nvim github.com/nvim-telescope/telescope.nvim
-nnoremap <leader>tt :Telescope find_files<cr>
-nnoremap <leader>tl :Telescope live_grep<cr>
 
 " *******************************************************************
 " w
