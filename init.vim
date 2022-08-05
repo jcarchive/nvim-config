@@ -1,0 +1,1 @@
+/home/jcarchive/Repos/Github/vim-settings/.vimrc
