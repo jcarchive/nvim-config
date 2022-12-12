@@ -20,8 +20,8 @@ set wildmenu wildmode=list:longest,full
 set number
 set relativenumber
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set autoindent
 
@@ -64,10 +64,12 @@ inoremap "" ""
 inoremap '' ''
 
 inoremap jk <esc>
+tnoremap jk <c-\><c-n>
 
 " Map bprev
-nnoremap LL :bprevious<cr>
-nnoremap HH :bnext<cr>
+nnoremap mm :MarksToggleSigns<cr>
+nnoremap LL :tabnext<cr>
+nnoremap HH :tabprevious<cr>
 nnoremap zz :mksession! workspace.nvim<cr>:wqa<cr>
 
 lua require('plugins')
@@ -99,6 +101,7 @@ nnoremap <leader>af :ALEFix<cr>
 " Source telescope.nvim github.com/nvim-telescope/telescope.nvim
 nnoremap <leader>ff :Telescope find_files<cr>
 nnoremap <leader>fl :Telescope live_grep<cr>
+nnoremap <leader>fv :NvimTreeToggle<cr>
 " *******************************************************************
 " g
 " GitGutter mappings
