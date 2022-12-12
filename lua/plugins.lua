@@ -11,6 +11,7 @@ packer.startup(function(use)
     use 'neovim/nvim-lspconfig'
 
     use 'mfussenegger/nvim-dap'
+    use 'chentoast/marks.nvim'
 
     use { 'hrsh7th/nvim-cmp', requires = {
             'hrsh7th/cmp-nvim-lsp',
@@ -29,6 +30,7 @@ packer.startup(function(use)
 
     use 'github/copilot.vim'
     use 'dense-analysis/ale'
+    use 'kyazdani42/nvim-tree.lua'
     use 'airblade/vim-gitgutter'
     use { 'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'} }
 end)
