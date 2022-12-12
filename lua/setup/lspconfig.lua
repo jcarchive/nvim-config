@@ -1,7 +1,6 @@
 local module = {}
 
 local lspconfig = require 'lspconfig'
-local lsputil = require 'lspconfig/util'
 
 function module.setup()
     -- C#, Omnisharp *************************************************************************************
@@ -9,7 +8,15 @@ function module.setup()
     -- bicep *********************************************************************************************
     lspconfig.bicep.setup{}
     -- lua ***********************************************************************************************
-    lspconfig['lua-lsp-server'].setup{}
+    lspconfig.sumneko_lua.setup{
+        settings = {
+        }
+    }
+    -- vue ***********************************************************************************************
+    lspconfig.volar.setup{}
+    -- python **********************************************************************************************
+    lspconfig.pyright.setup{}
+
 end
 
 return module
