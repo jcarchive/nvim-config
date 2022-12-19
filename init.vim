@@ -1,5 +1,5 @@
 syntax on
-colorscheme tokyonight
+colorscheme gruvbox
 
 set encoding=utf-8
 
@@ -37,7 +37,7 @@ set completeopt=menu,menuone,noselect
 
 
 " Custom mappings
-let mapleader=";"
+let mapleader=","
 
 inoremap (<enter> (<enter>)<esc>O<tab>
 inoremap {<enter> {<enter>}<esc>O<tab>
@@ -69,8 +69,11 @@ tnoremap jk <c-\><c-n>
 " Map bprev
 nnoremap mm :MarksToggleSigns<cr>
 nnoremap LL :tabnext<cr>
+tnoremap LL <c-\><c-n>:tabnext<cr>
 nnoremap HH :tabprevious<cr>
+tnoremap HH <c-\><c-n>:tabprevious<cr>
 nnoremap zz :mksession! workspace.nvim<cr>:wqa<cr>
+tnoremap zz <c-\><c-n>:mksession! workspace.nvim<cr>:wqa<cr>
 
 lua require('plugins')
 lua require('config')
@@ -113,6 +116,7 @@ nnoremap <leader>ge :GitGutterLineHighlightsToggle<cr>
 " w
 " Window management
 nnoremap <leader>w <c-w>
+tnoremap <leader>w <c-\><c-n><c-w>
 
 " *******************************************************************
 
